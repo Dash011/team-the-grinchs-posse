@@ -1,9 +1,0 @@
-<h2>Family Members</h2>
-<ul class="members">
-  <li *ngFor="let member of members"
-    [class.selected]="member === selectedMember"
-    (click)="onSelect(member)">
-    <span class="badge">{{member.id}}</span> {{member.name}}
-  </li>
-</ul>
-<app-member-detail [member]="selectedMember"></app-member-detail>
